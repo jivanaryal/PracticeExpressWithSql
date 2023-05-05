@@ -7,8 +7,6 @@ const {
   updateData,
 } = require("../controllers/data");
 const router = Router();
-
 router.route("/").get(getData).post(postData);
 router.route("/:id").get(getSingleData).delete(deleteData).patch(updateData);
-
 module.exports = router;
